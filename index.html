@@ -8,8 +8,8 @@
 </head>
 <body>
     
-<form  enctype="multipart/form-data" action="/uploadimg" method="post">
-   <input  type="file" name="profile" id="filename">
+<form onsubmit="submitfile()" enctype="multipart/form-data">
+   <input type="file" name="profile" id="filename">
    <input type="submit">
 </form>
 
@@ -38,6 +38,12 @@ getdata()
 
 
     }
+
+    async function submitfile (event){
+        event.preventDefault()
+console.log(event)
+    }
+
     </script>
 </body>
 </html>

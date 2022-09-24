@@ -13,6 +13,7 @@ const XLSX = require('xlsx')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors())
 
+
 // mongoose.connect("mongodb://localhost:27017/imgupload")
 mongoose.connect("mongodb://localhost:27017/excellfile",
     { useNewUrlParser: true, useUnifiedTopology: true }, err => {
@@ -76,8 +77,13 @@ app.get('/photos', async(req, res) => {
     return res.status(200).json(data)
 })
 
+app.get("/getxlfile",async(req,res)=>{
+  const data = await Excell.find()
+  return res.status(200).json(data)
+})
+
 app.delete("/deleteall",async(req,res)=>{
-  const data = await Images.deleteMany()
+  const data = await Excell.deleteMany()
   return res.status(200).json(data)
 })
 
