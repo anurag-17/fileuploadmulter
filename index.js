@@ -15,7 +15,7 @@ app.use(cors())
 
 
 // mongoose.connect("mongodb://localhost:27017/imgupload")
-mongoose.connect("mongodb://localhost:27017/excellfile",
+mongoose.connect("mongodb+srv://aadilkhan:1234@e-com.l2pmf.mongodb.net/?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }, err => {
         console.log('connected')
     });

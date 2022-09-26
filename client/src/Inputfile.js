@@ -7,7 +7,8 @@ export const Inputfile = () => {
 const handlesubmit = async(e)=>{
     e.preventDefault()
     const formdata = new FormData()
-    formdata.append("xlsx",selectedfile[0])
+    console.log(selectedfile);
+    formdata.append("xlsx",selectedfile)
     const config = {
         headers: {
             'content-type': 'multipart/form-data'
@@ -16,6 +17,7 @@ const handlesubmit = async(e)=>{
     const res = await axios.post("http://localhost:5500/upload",formdata,config)
     console.log(res.data)
 }
+
   return (
     <div>
 <form onSubmit={handlesubmit} action="">
