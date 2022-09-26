@@ -1,0 +1,186 @@
+
+.sectionA,.sectionB,.sectionC, .sectionD, .sectionE, .sectionF{
+    border-bottom: 1px solid #0000005a;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}
+.flexsearchX{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 45%;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+.flexsearchX p{
+    font-size: 16px;
+    font-weight: 500;
+  
+}
+.flexsearchX input{
+    width: 63%;
+    text-align: left;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.flexTopX h4{
+   margin-left: 20px;
+   margin-bottom: 30px;
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.flexAX{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
+}
+.flexBX{
+   
+   margin-right: 40px;
+    width: 50%;
+}
+.flexBaX{
+   
+    margin-left: 40px;
+     width: 50%;
+   
+ }
+
+.flexC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;  
+ 
+    
+
+}
+.flexC p{
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 10px;
+  
+}
+.flexC input{
+    width: 60%;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+   
+    
+    
+}
+.flexT{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 30px 10px 20px;
+    vertical-align: middle;
+}
+.flexT h4{
+    font-size: 25px;
+    font-weight: 600;
+   padding-top: 5px;
+}
+.flexT p{
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+.flexD{
+    display: flex;
+    flex-direction: row;
+    line-height: 12px;
+}
+.flexD p{
+   
+ font-size: 16px;
+ margin-left: 10px;
+ padding-top: 15px;
+
+}
+
+.endbutton{
+   width: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+.endbutton input{
+    padding: 8px 50px;
+   background-color:  #444444;
+}
+
+@media (max-width: 767px) {
+    .flexsearchX{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+        flex-wrap: wrap;
+        font-family: 'Inter', sans-serif;
+    }
+    .flexAX{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        
+    }
+    .flexBX{
+   
+        margin-right: 0px;
+         width: 100%;
+     }
+     .flexBaX{
+     
+          width: 100%;
+          margin-left: 0px;
+      }
+      .flexC{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;  
+      }
+      .flexC input{
+        width: 100%;
+        background-color: #f1f1f1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 10px;    
+    }
+    .flexD p{
+   
+        font-size: 16px;
+        margin-left: 10px;
+        padding-top: 15px;
+       
+       }
+    .flexT{
+  
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 30px 10px 20px;
+        vertical-align: middle;
+    }
+}
